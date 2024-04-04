@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_new_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_new_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FindMeOnGithub">
+        <activity
+            android:name=".setting.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInterface.myfavofavo.MyFavoFavoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInterface.main.Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".userInterface.detailPackage.DetailOfUserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_detail_of_user"
+            android:theme="@style/Theme.FindMeOnGithub.NoActionBar" />
+        <activity
+            android:name=".userInterface.main.MainActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userInterface.detailPackage.DetailOfUserActivity">
+
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/avatar_of_user"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_photo"
+        app:layout_constraintVertical_bias="0.026"
+        tools:text="@string/username" />
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle_2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:padding="9dp"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        app:layout_constraintVertical_bias="0.033"
+        tools:text="@string/fullname" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:padding="9dp"
+        android:fontFamily="serif"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:background="@drawable/rounded_rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fullname"
+        app:layout_constraintVertical_bias="0.034"
+        tools:text="@string/location" />
+
+    <TextView
+        android:id="@+id/repository"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:padding="9dp"
+        android:fontFamily="serif"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:background="@drawable/rounded_rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fullname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_fullname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location"
+        app:layout_constraintVertical_bias="0.038"
+        tools:text="@string/repository" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:padding="9dp"
+        android:fontFamily="serif"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:background="@drawable/rounded_rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/repository"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/repository"
+        app:layout_constraintTop_toBottomOf="@+id/repository"
+        app:layout_constraintVertical_bias="0.042"
+        tools:text="@string/company" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/company">
+
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:foregroundGravity="center_vertical"
+            android:maxLines="5"
+            android:fontFamily="serif"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_people"
+
+            tools:text="@string/followers" />
+
+        <TextView
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center"
+            android:maxLines="5"
+            android:fontFamily="serif"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_people"
+
+            tools:text="@string/following" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:tabTextColor="@color/black" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:foregroundGravity="center_vertical|center"
+        app:circularflow_viewCenter="@id/view_pager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablayout" />
+
+    <ToggleButton
+        android:id="@+id/fav_toggle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textOn="@string/yay"
+        android:textOff="@string/nay"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/my_fav_toggle"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
