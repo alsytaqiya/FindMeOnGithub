@@ -22,4 +22,5 @@ These specifications represent some of the characteristics of one of this FindMe
    
 ## Demonstration
 Here is a video demonstration of FindMeOnGithub app:
-[Find Me On Github.webm](https://github.com/alsytaqiya/FindMeOnGithub/assets/93572947/3159bac8-b469-4b05-81d7-1b60ae6a55f5)
+https://github.com/alsytaqiya/FindMeOnGithub/assets/93572947/88c90e09-723c-4192-8152-71248ddb6cf1
+
